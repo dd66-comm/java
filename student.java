@@ -1,57 +1,46 @@
-package student;
+package lll;
 
 public class student {
-  private String studentID;
-  private String firstName;
-  private String lastName;
-  
-  public student() {
-	  studentID="01";
-	  firstName="Èý";
-	  lastName="ÕÅ";
-	
-  }
-  
-  public student(String studentID,String firstName,String lastName) {
-	  this.studentID=studentID;
-	  this.firstName=firstName;
-	  this.lastName=lastName;
-  }
-
-public String getStudentID() {
-	return studentID;
-}
-
-public void setStudentID(String studentID) {
-	this.studentID = studentID;
-}
-
-public String getFirstName() {
-	return firstName;
-}
-
-public void setFirstName(String firstName) {
-	this.firstName = firstName;
-}
-
-public String getLastName() {
-	return lastName;
-}
-
-public void setLastName(String lastName) {
-	this.lastName = lastName;
-}
-
-
-public String toString() {
-	String msg;
-	msg="studentID:"+this.studentID;
-	msg+="firstName:"+this.firstName;
-	msg+="lastName:"+this.lastName;
-	return msg;
+	 private String id;
+	  private String name;
+	  private String birth;
+	  private String  gender;
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", birth=" + birth + ", gender=" + gender + "]";
 	}
-  
-  
-  
-  
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getBirth() {
+		return birth;
+	}
+	public void setBirth(String birth) {
+		this.birth = birth;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public student(String id, String name, String birth, String gender) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.birth = birth;
+		this.gender = gender;
+	}
+	public student() {
+		// TODO Auto-generated constructor stub
+	}
 }
